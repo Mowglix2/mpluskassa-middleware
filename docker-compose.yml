@@ -1,0 +1,19 @@
+services:
+  api:
+    build: .
+    env_file: .env
+    ports: ["127.0.0.1:8000:8000"]
+    volumes:
+      - ./data:/app/data:ro
+      - ./runtime:/app/runtime
+    environment:
+      DB_PATH: /app/runtime/orders.sqlite3
+  worker:
+    build: .
+    command: python -m app.worker
+    env_file: .env
+    volumes:
+      - ./data:/app/data:ro
+      - ./runtime:/app/runtime
+    environment:
+      DB_PATH: /app/runtime/orders.sqlite3

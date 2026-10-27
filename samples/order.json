@@ -1,0 +1,10 @@
+{
+  "id": "test-order-001",
+  "cart": {
+    "items": [
+      {"title": "kleine kapsalon", "quantity": 2, "price": 1250,
+       "selected_modifier_groups": [{"selected_items": [{"title": "cheddar", "quantity": 1, "price": 100}]}]},
+      {"title": "coca cola", "quantity": 1, "price": 250}
+    ]
+  }
+}
