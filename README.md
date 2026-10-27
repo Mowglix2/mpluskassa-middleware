@@ -1,6 +1,5 @@
-# Uber Eats → MplusKASSA (functional reconstruction)
+# Uber Eats → MplusKASS
 
-This is a **new implementation**, not a recovered original repository. It includes the **original** `plu_mapping.json` recovered from the WhatsApp archive (43 items and 39 modifiers). The historical mapping keys are **names**, not Uber item IDs, so matching is exact after case/diacritic/punctuation normalization; unknown products are blocked.
 
 ## Quick start (dry run)
 
